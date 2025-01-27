@@ -15,14 +15,6 @@ A comprehensive solution for scraping job listings, extracting details, and expo
 - Google Chrome
 - ChromeDriver (auto-managed)
 
-## Installation
-
-```bash
-git clone https://github.com/your-username/job-scraping-project.git
-cd job-scraping-project
-pip install -r requirements.txt
-```
-
 ## Usage
 
 ### Automated Execution
@@ -45,7 +37,7 @@ scrapy crawl job_details
 
 3. **JSON to Excel**:
 ```bash
-python json_to_excel.py
+python convert.py
 ```
 
 ## Project Structure
@@ -57,17 +49,17 @@ job-scraping-project/
 │   └── requirements.txt
 ├── scrapy_project/
 │   ├── scrapy_project/
+    ├── output/
+    │   ├── output.json
 │   │   ├── spiders/
 │   │   │   └── job_details_spider.py
 │   │   ├── items.py
 │   │   ├── settings.py
 │   │   └── __init__.py
 │   └── scrapy.cfg
-├── output/
-│   ├── output.json
-│   └── jobs.xlsx
 ├── temp_job_links.json
-├── json_to_excel.py
+├── jobs.xlsx
+├── convert.py
 ├── main.py
 ├── requirements.txt
 └── README.md
